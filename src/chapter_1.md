@@ -18,16 +18,14 @@ docker images
 และต่อไปเราจะสร้าว container ของ percona server
 
 ```rust
-docker run --name container-name -e MYSQL_ROOT_PASSWORD=secret 
--d percona/percona-server:tag
+docker run --name container-name -e MYSQL_ROOT_PASSWORD=secret -d percona/percona-server:tag
 ```
 
 โดย container-name คือชื่อ container ที่ต้องการ PASSWORD=secret secret คือรหัสผ่าน และ tag คือ tag ของตัวนั้น
 example
 
 ```rust
-docker run --name percona-server -e MYSQL_ROOT_PASSWORD=root 
--d percona/percona-server:8.0
+docker run --name percona-server -e MYSQL_ROOT_PASSWORD=root -d percona/percona-server:8.0
 ```
 
 และใช้คำสั่ง 
