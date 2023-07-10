@@ -24,7 +24,7 @@ create table sensative_data (id int, hushhush bigint);
 insert into sensative_data values (1,1234567890),(2,0987654321);
 ``````
 
-ต่อไปคือการทำ Data masking
+ต่อไปคือการทำ Data masking 
 ``````markdown
 SELECT id, 
        hushhush as 'Original', 
@@ -32,6 +32,9 @@ SELECT id,
        MASK_OUTER(convert(hushhush using binary),3,3) as 'Outer' 
 FROM sensative_data;
 ``````
+MASK_INNER คือการเปลี่ยนคำด้านในตามกำหนด โดยค่าพื้นฐานจะถูกแทนด้วย (X) และเอามาแทนตามลำดับ 2,3 คือ เซนเซอร์ หลังจากตัวอักษรที่ 2 จนถึง ตัวอักษรที่ 3 นับจากหลังสุด
+
+
 
 ``````markdown
 +------+------------+------------+------------+
