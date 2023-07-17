@@ -2,4 +2,10 @@
 
 หลังจากที่เราดีง database มาแล้วเราจะมาลองเล่นกัน
 
+โดยเราจะเล่นกับ **table products**
 
+โดยเราจะลองนำเอา dictionary name มาแทน product_name
+
+``````markdown
+cd
+``````
