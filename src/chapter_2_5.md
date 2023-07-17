@@ -17,7 +17,7 @@ gen_blacklist(str, dictionary_name, replacement_dictionary_name)
 ``````markdown
 show variables like "secure_file_priv"; 
 ``````
-และ
+หรือ
 ``````markdown
 SELECT @@global.secure_file_priv;
 ``````
