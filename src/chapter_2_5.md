@@ -12,7 +12,7 @@ gen_blacklist(str, dictionary_name, replacement_dictionary_name)
 ``````
 ก่อนที่เราจะใช้ได้จะต้องนำ Dictionary เข้ามาก่อน
 
-โดย การเช็ค PATH ของ ***secure-file-priv*** ซึ่งจะใช้ในการ load ตัว Dictionary ขึ้นมา
+โดย การเช็ก PATH ของ ***secure-file-priv*** ซึ่งจะใช้ในการ load ตัว Dictionary ขึ้นมา
 
 ``````markdown
 show variables like "secure_file_priv"; 

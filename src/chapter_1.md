@@ -1,16 +1,16 @@
 # บทที่ 1 ติดตั้งใน Docker
 
-โดย เราจะติดตั้งลงกันใน Docker เพื่อใช้ในการเปิดเซิฟเวอร์ ทั้งนี้ ยังสามารถลงในช่องทางต่างๆได้เช่น APT, YUM, Binary tarballs และ อื่นๆ สามารถดูวิธีติดตั้งของระบบอื่นได้ที่นี่ [LINK](https://docs.percona.com/percona-server/8.0/quickstart-overview.html?_gl=1*17nk6ok*_gcl_au*NTM3NDg1MDAwLjE2ODg5NjI0NDI.)
+โดย เราจะติดตั้งลงกันใน Docker เพื่อใช้ในการเปิดเซิร์ฟเวอร์ ทั้งนี้ ยังสามารถลงในช่องทางต่างๆได้เช่น APT, YUM, Binary tarballs และ อื่นๆ สามารถดูวิธีติดตั้งของระบบอื่นได้ที่นี่ [LINK](https://docs.percona.com/percona-server/8.0/quickstart-overview.html?_gl=1*17nk6ok*_gcl_au*NTM3NDg1MDAwLjE2ODg5NjI0NDI.)
 
  เพื่อช่วยให้การลง Percona นั้นง่ายขึ้นขอแนะนำให้เข้าไปดึงบางคำสั่งได้ที่นี่ [LINK](https://registry.hub.docker.com/r/percona/percona-server)
 
-โดยเริ่มจากการพิมคำสั่งลงใน Termainal เพื่อติดตั้ง Percona เวอร์ชั่นที่ต้องการ
+โดยเริ่มจากการพิมพ์คำสั่งลงใน Terminal เพื่อติดตั้ง Percona เวอร์ชันที่ต้องการ
 
 ``````markdown
 docker pull percona/percona-server:8.0
 ``````
 
-ทั้งนี้สามารถเปลี่ยนเวอร์ชั่นได้ตามต้องการ 
+ทั้งนี้สามารถเปลี่ยนเวอร์ชันได้ตามต้องการ 
 พอรันเสร็จให้เราเช็คว่ามี docker images ไหมเพื่อเช็คความมั่นใจ
 ```rust
 docker images
@@ -41,13 +41,13 @@ docker exec -it Container-id bash
 ```
 โดย container-id ก็คือ container id ที่เราต้องการ 
 และเราจะเข้ามาใน container เรียบร้อย
-และต่อไปเราจะใช้ Percona Mysql Server โดยการพิม
+และต่อไปเราจะใช้ Percona Mysql Server โดยการพิมพ์
 
 ```rust
 mysql -uroot -proot
 ```
 
-และทำการเช็คข้อมูล Databases ข้างในโดยการพิม
+และทำการเช็กข้อมูล Databases ข้างในโดยการพิมพ์
 
 ```rust
 show databases;
