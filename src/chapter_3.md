@@ -44,11 +44,3 @@ mysql -u username -p new_database < data-dump.sql
 use toy;
 ``````
 เพราะตามคำสั่งจะสร้าง database ชื่อ toy ขึ้นมาแทน
-
-
-
-
-
-``````markdown
-
-``````
