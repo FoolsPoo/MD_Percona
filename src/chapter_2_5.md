@@ -71,3 +71,10 @@ SELECT gen_blacklist('apple', 'fruit', 'nut');
 ``````
 
 โดย apple คือ str ที่อยู่ใน fruit โดยจะถูกแทนที่ด้วย nut แบบสุ่ม 
+
+ต่อไปคือ `gen_dictionary`
+
+วิธีการใช้จะใกล้เคียงกับตัวของ blacklist แต่เป็นเพียงการวางค่าลงไปแทน
+``````markdown
+SELECT gen_dictionary('name');
+``````
